@@ -13,3 +13,9 @@ if __name__ == "__main__":
     plt.xticks([]), plt.yticks([])
     plt.show()
 
+    eye = img[252:279, 245:293]
+    img[80:107, 70:118] = eye
+
+    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    plt.xticks([]), plt.yticks([])
+    plt.show()

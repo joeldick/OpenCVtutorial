@@ -15,6 +15,15 @@ if __name__ == '__main__':
     cv2.polylines(img,[triangle],True,(0, 0, 0), 3)
     cv2.line(img, (256, 157), (256, 305), (0, 0, 0), 3)
     cv2.circle(img, (256, 256), 49, (0, 0, 0), 3)
+    cv2.putText(img,
+                'Avada Kedavra',
+                (50, 360),
+                cv2.FONT_HERSHEY_SCRIPT_SIMPLEX,
+                2,
+                (0, 0, 0),
+                2,
+                cv2.LINE_AA
+                )
 
     cv2.imshow('imange',img)
     if cv2.waitKey(0) == ord('q'):
